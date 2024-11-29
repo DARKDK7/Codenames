@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة الكلمات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="gameContainer">
+        <header>
+            <h1>لعبة الكلمات</h1>
+        </header>
+
+        <div id="gameInfo">
+            <div id="scoreboard">
+                <div id="team1">الفريق 1: <span id="score1">0</span> نقاط</div>
+                <div id="team2">الفريق 2: <span id="score2">0</span> نقاط</div>
+            </div>
+            <div id="timer">الوقت: <span id="time">30</span> ثانية</div>
+            <button id="startBtn">ابدأ اللعبة</button>
+        </div>
+
+        <div id="gameBoard"></div>
+
+        <div id="resultMessage" class="hidden">
+            <h2 id="resultText"></h2>
+            <button id="resetBtn">إعادة اللعب</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
