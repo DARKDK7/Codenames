@@ -1,0 +1,111 @@
+/* تحسين المظهر العام للصفحة */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #ff7e5f, #ff5722);
+    background-size: 400% 400%;
+    animation: gradientBackground 5s ease infinite;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+/* تحسين أزرار اللعبة */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* تنسيق اللوحة */
+#gameBoard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* تحسين البطاقات */
+.card {
+    width: 150px;
+    height: 200px;
+    background-color: #ff7e5f;
+    margin: 10px;
+    border-radius: 15px;
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    line-height: 200px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+    transform: scale(1.1);
+    background-color: #ff5722;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+/* تحسين شريط الوقت */
+#gameInfo {
+    margin-top: 30px;
+}
+
+#scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+#team1, #team2 {
+    font-size: 20px;
+}
+
+#timer {
+    font-size: 25px;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+/* نتيجة اللعبة */
+#resultMessage {
+    display: none;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* خلفية ديناميكية */
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
